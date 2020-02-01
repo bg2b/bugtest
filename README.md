@@ -28,7 +28,8 @@ You will probably want to use atlas versions of textures for the sprites to keep
 down.  Just make the physics bodies from one of these methods.  If you need lots of copies of a
 physics body, you can save it and make copies with the (semi-undocumented) `copy()` method:
 ```
-var bodies = [SKTexture: SKPhysicsBody]()
+var bodies = [SKTexture: SKPhysicsBody]() // Cache of physics bodies
+...
 if let body = bodies[texture] {
   return body.copy() as! SKPhysicsBody
 } else {
