@@ -31,7 +31,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // From an atlas, but call size() to force loading
     let texture = SKTexture(imageNamed: "ship_blue")
     _ = texture.size()
-    addShip(SKTexture(imageNamed: "ship_blue"), how: "atlas force load")
+    addShip(texture, how: "atlas force load")
     // Reconstruct via CGImage (size would be wrong because of 2x)
     let cgTexture = SKTexture(cgImage: texture.cgImage())
     addShip(cgTexture, how: "reconstruct via cgImage")
