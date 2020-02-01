@@ -1,6 +1,8 @@
 # bugtest
 Test of iOS 13 physics body from texture bug avoidance
 
+Built using Xcode version 11.3 (11C29)
+
 Running this on an iPad Pro 11-inch (3rd generation, 2018), iOS version 13.3 produces this console output:
 
 ```
