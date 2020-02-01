@@ -19,3 +19,21 @@ not in atlas worked
 Here's a screen shot with the different attempts:
 
 ![Screen shot](images/screenshot.jpeg)
+
+Summary: if you're running into this bug, you can avoid it either by creating the physics body from
+a texture that's not part of an atlas, or by re-rendering the sprite to produce a new texture and
+making the physics body from the rendered texture.
+
+You will probably want to use atlas versions of textures for the sprites to keep the draw count
+down.  Just make the physics bodies from one of these methods.  If you need lots of copies of a
+physics body, you can save it and make copies with the (semi-undocumented) `copy()` method:
+```
+var bodies = [SKTexture: SKPhysicsBody]()
+if let body = bodies[texture] {
+  return body.copy() as! SKPhysicsBody
+} else {
+  // Create newBody using one of the working methods...
+  bodies[texture] = newBody
+  return newBody
+}
+```
