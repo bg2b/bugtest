@@ -1,6 +1,11 @@
 # bugtest
 Test of iOS 13 physics body from texture bug avoidance
 
+The issue: starting in iOS 13, SpriteKit's method for creating conforming physics bodies from textures
+broke.  Sometimes it would give incorrect physics bodies, sometimes it would just fail to produce a
+physics body at all.  It's been patched somewhat over time.  Various workarounds have also been
+suggested.  This project shows some of the workarounds to check what currently works and what doesn't.
+
 Built using Xcode version 11.3 (11C29)
 
 Running this on an iPad Pro 11-inch (3rd generation, 2018), iOS versions 13.3 and 13.3.1
