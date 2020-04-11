@@ -6,9 +6,9 @@ broke.  Sometimes it would give incorrect physics bodies, sometimes it would jus
 physics body at all.  It's been patched somewhat over time.  Various workarounds have also been
 suggested.  This project shows some of the workarounds to check what currently works and what doesn't.
 
-Built using Xcode version 11.3 (11C29)
+Built using Xcode version 11.3 (11C29) and 11.4 (11E146)
 
-Running this on an iPad Pro 11-inch (3rd generation, 2018), iOS versions 13.3 and 13.3.1
+Running this on an iPad Pro 11-inch (3rd generation, 2018), iOS versions 13.3, 13.3.1, and 13.4.1
 produces this console output:
 
 ```
